@@ -20,7 +20,7 @@ jobs:
           user: debans-network
           base: header, metadata, repositories, community, activity
           config_display: columns
-          config_order: base.header, introduction, repositories
+          config_order: base.header, base.metadata, base.repositories, base.community, base.activity, introduction, repositories
           plugin_lines: yes
           plugin_introduction: yes
           plugin_introduction_title: yes
