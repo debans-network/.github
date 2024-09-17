@@ -18,20 +18,11 @@ jobs:
           token: ${{ secrets.METRICS_TOKEN }}
           filename: profile/metrics/metrics.svg
           user: debans-network
-          base: header
+          base: header, metadata, repositories, community, activity
           config_display: columns
-          config_order: base.header, introduction, habits, people, pagespeed
+          config_order: base.header, introduction, repositories
           plugin_lines: yes
           plugin_introduction: yes
-          plugin_introduction_title: no
-          plugin_habits: yes
-          plugin_habits_facts: no
-          plugin_habits_charts: yes
+          plugin_introduction_title: yes
+          plugin_traffic: yes
           config_timezone: Europe/Paris
-          plugin_people: yes
-          plugin_people_types: members,followers
-          #plugin_people_thanks: ,thanks
-          plugin_pagespeed: no
-          plugin_pagespeed_detailed: yes
-          plugin_pagespeed_token: ${{ secrets.PAGESPEED_TOKEN }}
-          plugin_pagespeed_url: https://debans.network
